@@ -1,0 +1,212 @@
+  /*Font from Google*/
+  @import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+  @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution');
+
+
+  .protest-revolution-regular {
+	font-family: 'Protest Revolution', sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 24px;
+	color: red;
+  }
+
+/* general styling */
+:root {
+	--smaller: .75;
+  }
+  
+  * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  
+  html, body {
+	height: 100%;
+	margin: 0;
+  }
+  
+  body {
+	align-items: center;
+	background-color: #ffd54f;
+	display: flex;
+	font-family: 'Merriweather', serif;
+  }
+  
+  .countdown-container {
+	color: #333;
+	margin: auto;
+	text-align: center;
+	max-width: 400px;
+  }
+  
+  h1 {
+	width: 500px;
+	font-weight: normal;
+	letter-spacing: .125rem;
+	/* text-transform: uppercase; */
+  }
+
+  #headline{
+	font-size: 1.5rem;
+  }
+  
+  li {
+	display: inline-block;
+	font-size: 0.9em;
+	list-style-type: none;
+	padding: 1em;
+	text-transform: uppercase;
+  }
+  
+  li span {
+	display: block;
+	font-size: 2.5rem;
+  }
+  
+  .emoji {
+	display: none;
+	padding: 1rem;
+  }
+  
+  .emoji span {
+	font-size: 4rem;
+	padding: 0 .5rem;
+  }
+  
+
+  .game-body {
+	font-family: 'Protest Revolution';
+	display: flex;
+	justify-content: center;
+	text-shadow: 2px 2px #000;
+  }
+  
+  canvas {
+	border: 1x solid #0a3cda;
+	margin: 10px;
+  }
+
+  @media all and (max-width: 768px) {
+	h1 {
+	  font-size: calc(1.5rem * var(--smaller));
+	}
+	
+	li {
+	  font-size: calc(1.125rem * var(--smaller));
+	}
+	
+	li span {
+	  font-size: calc(3.375rem * var(--smaller));
+	}
+  }
+
+* {
+    box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  background-color: #ea9e10;
+  transition: background-color 2s;
+}
+
+#fact-container {
+    background-color: #fff;
+    width: 649px;
+    height: 526px;
+    margin: 20px auto 0px auto;
+    border-radius: 10px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    overflow: hidden;
+    padding: 0px 69px;
+}
+
+#title{
+	text-align: center;
+    display: block;
+    color: #ea9e10;
+    height: 70px;
+    font-family: 'Protest Revolution', serif;
+    font-size: 50px;
+	font-weight: bolder;
+    padding-top: 24px;
+    margin: 10px;
+    transition: color 2s;
+    text-shadow: 2px 2px #000;
+}
+
+#fact {
+    text-align: center;
+    display: block;
+    color: #ea9e10;
+    height: 214px;
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    padding-top: 24px;
+    margin: 30px 0px 20px 0px;
+    transition: color 2s;
+    text-shadow: 2px 2px #fff;
+}
+
+#cancel-button{
+	cursor: pointer;
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    padding-top: 8px;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition: background-color 2s;
+}
+
+#cancel-button:hover{
+	transform: scale(0.98);
+	box-shadow: #fff;
+}
+
+#button {
+    cursor: pointer;
+    background-color: #ea9e10;
+    color: #fff;
+    display: inline-block;
+    width: 201px;
+    height: 40px;
+    padding-top: 8px;
+    border-radius: 10px;
+    margin-top: 70px;
+    transition: background-color 2s;
+} 
+
+#button:hover{
+	transform: scale(0.98);
+	box-shadow: grey;
+}
+
+#twitter {
+    display: block;
+    font-size: 87px;
+    color: #ea9e10;
+    cursor: pointer;
+    transition: color 2s;  
+ } 
+
+
+#link-paragraph {
+    text-align: center;
+    display: block;
+    color: #000;
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    padding-top: 8px;
+}
+ 
+#button:hover {
+    opacity: 0.8;
+}
+
+#twitter:hover {
+    opacity: 0.8;
+}

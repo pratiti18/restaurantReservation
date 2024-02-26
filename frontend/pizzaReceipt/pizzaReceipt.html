@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pizzaReceipt.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid my-5  d-flex  justify-content-center">
+        <div class="card card-1" style="width: 100%; max-width: 700px;">
+            <div class="card-header bg-white">
+                <div class="media flex-sm-row flex-column-reverse justify-content-between">
+                    <div class="col my-auto"> <h4 class="mb-0">Commence the Cheesy Adventure, <span class="change-color" id="username-span"> </span> !</h4> </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card card-2">
+                                <div class="card-body">
+                                    <div class="media" id="receipt-cards">
+                                        <!-- Populate the cards here .... -->
+                                    </div>
+                                    <hr class="my-3 ">
+                                    <div class="row">
+                                        <div class="col-md-3 mb-3"> <small style="margin-left: 80px;"> Seated <span><i class=" ml-2 fa fa-refresh"  aria-hidden="true"></i></span></small> </div>
+                                        <div class="col mt-auto">
+                                            <div class="progress my-auto"> <div class="progress-bar progress-bar  rounded" role="progressbar" aria-valuenow="25" aria-valuemin="0"  aria-valuemax="100" id="progress-bar-length"></div> </div>
+                                            <div class="media row justify-content-between ">
+                                                <div class="col-auto text-right"><span> <small  class="text-right mr-sm-2"></small> <i class="fa fa-circle active"></i> </span></div>
+                                                <div class="flex-col"> <span> <small class="text-right mr-sm-2">Baking</small><i class="fa fa-circle active"></i></span></div>
+                                                <div class="flex-col"> <span> <small class="text-right mr-sm-2">Baked</small><i class="fa fa-circle active"></i></span></div>
+                                                <div class="flex-col"> <span> <small class="text-right mr-sm-2">burp! Tasty</small><i class="fa fa-circle active"></i></span></div>
+                                                <div class="col-auto flex-col-auto"><small  class="text-right mr-sm-2">Finished</small><span> <i  class="fa fa-circle"></i></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+      <script src="../globalParameters.js"></script>
+      <script src="pizzaReceipt.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>

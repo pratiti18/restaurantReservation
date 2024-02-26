@@ -1,0 +1,197 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script  src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="container" class="container" style="overflow-y:scroll">
+			<!-- FORM SECTION -->
+			<div class="row">
+				<!-- SIGN UP -->
+				<div class="col align-items-center flex-col sign-up" style="overflow-y:visible">
+					<div class="form-wrapper align-items-center">
+						<div class="form sign-up" id="signup-form">
+							<form action="">
+								<div class="input-group">
+									<i class='bx bx-mail-send'></i>
+									<input id="username" type="text" placeholder="Username" required />
+									<div id="username_error"></div>
+								</div>
+								<div class="input-group">
+									<i class='bx bx-mail-send'></i>
+									<input id="email" type="email" placeholder="Email" required />
+									<div id="email_error"></div>
+								</div>
+								<div class="input-group">
+									<input id="password" type="password" placeholder="Password" required />
+									<div id="password_error"></div>
+									<i class="fa-regular fa-eye-slash" id="toggleIcon_password" style="width: fit-content; margin-left: 80%" onclick="togglePasswordVisibility('password')"></i>
+								</div>
+								
+								<!-- Inside the confirm password input field -->
+								<div class="input-group">
+									<!-- <i class='bx bxs-lock-alt'></i> -->
+									<input id="confirm_password" type="password" placeholder="Confirm Password" required />
+									<div id="confirm_password_error"></div>
+								</div>
+
+								<button type="button" onclick="handleSubmit(event)">
+									Sign up
+								</button>
+								<p>
+									<span>
+										Already have an account?
+									</span>
+									<b onclick="toggle()" class="pointer">
+										Place your Order
+									</b>
+								</p>
+							</form>
+						</div>
+					</div>	
+				</div>
+				<!-- END SIGN UP -->
+				<!-- SIGN IN -->
+				<div class="col align-items-center flex-col sign-in">
+					<div class="form-wrapper align-items-center">
+						<div class="form sign-in">
+							<form action="">
+								<div class="input-group">
+									<i class='bx bxs-user'></i>
+									<input type="email" placeholder="Email" id="signin_mail" required />
+									<span id="login_email"></span>
+								</div>
+								<div class="input-group">
+									<i class='bx bxs-lock-alt'></i>
+									<input id="signin_password" type="password" placeholder="Password" required />
+									<i class="fa-regular fa-eye-slash" id="toggleIcon_signin_password" style="width: fit-content; margin-left: 80%" onclick="togglePasswordVisibility('signin_password')"></i>
+									<span id="login_password"></span>
+								</div>
+								<button class="order_btn" type="button" onclick="bookingHandle(event)">
+									Book Now
+								</button>
+							<p>
+								<span>
+									Don't have an account?
+								</span>
+								<b onclick="toggle()" class="pointer">
+									Sign up here
+								</b>
+							</p>
+						</form>
+						</div>
+					</div>
+					<div class="form-wrapper">
+			
+					</div>
+				</div>
+				<!-- END SIGN IN -->
+			</div>
+			<!-- END FORM SECTION -->
+			<!-- CONTENT SECTION -->
+			<div class="row content-row">
+				<!-- SIGN IN CONTENT -->
+				<div class="col align-items-center flex-col">
+					<div class="text sign-in logoAlgn">
+						<h2>
+							<span class="img sign-in">
+							<img src="pizza-box.png" alt="Pizza Logo">
+							</span>
+							<span class="title-text">PizzaStory</span>
+						</h2>
+						
+						<!-- <div class="img sign-in">
+						</div> -->
+					</div>
+				</div>
+				<!-- END SIGN IN CONTENT -->
+				<!-- SIGN UP CONTENT -->
+				<div class="col align-items-center flex-col signUp">
+					<div class="img sign-up">
+					
+					</div>
+					<div class="text sign-up">
+						<h2>
+							Say Cheeze🍕
+						</h2>
+		
+					</div>
+				</div>
+				<!-- END SIGN UP CONTENT -->
+			</div>
+			<!-- END CONTENT SECTION -->
+		</div>
+		<div class="loader" id="loader">
+			<svg viewBox="0 0 100 100">
+				<g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
+					<!-- left line -->
+					<path d="M 21 40 V 59">
+						<animateTransform
+				attributeName="transform"
+				attributeType="XML"
+				type="rotate"
+				values="0 21 59; 180 21 59"
+				dur="2s"
+				repeatCount="indefinite" />
+					</path>
+					<!-- right line -->
+					<path d="M 79 40 V 59">
+						<animateTransform
+				attributeName="transform"
+				attributeType="XML"
+				type="rotate"
+				values="0 79 59; -180 79 59"
+				dur="2s"
+				repeatCount="indefinite" />
+					</path>
+					<!-- top line -->
+					<path d="M 50 21 V 40">
+						<animate
+				attributeName="d"
+				values="M 50 21 V 40; M 50 59 V 40"
+				dur="2s"
+				repeatCount="indefinite" />
+					</path>
+					<!-- btm line -->
+					<path d="M 50 60 V 79">
+						<animate
+				attributeName="d"
+				values="M 50 60 V 79; M 50 98 V 79"
+				dur="2s"
+				repeatCount="indefinite" />
+					</path>
+					<!-- top box -->
+					<path d="M 50 21 L 79 40 L 50 60 L 21 40 Z">
+					<animate
+				attributeName="stroke"
+				values="rgba(255,255,255,1); rgba(100,100,100,0)"
+				dur="2s"
+				repeatCount="indefinite" />
+					</path>
+					<!-- mid box -->
+					<path d="M 50 40 L 79 59 L 50 79 L 21 59 Z"/>
+					<!-- btm box -->
+					<path d="M 50 59 L 79 78 L 50 98 L 21 78 Z">
+					<animate
+				attributeName="stroke"
+				values="rgba(100,100,100,0); rgba(255,255,255,1)"
+				dur="2s"
+				repeatCount="indefinite" />
+					</path>
+					<animateTransform
+				attributeName="transform"
+				attributeType="XML"
+				type="translate"
+				values="0 0; 0 -19"
+				dur="2s"
+				repeatCount="indefinite" />
+				</g>
+			</svg>
+		</div>
+		<script src="index.js"></script>
+	</body>
+	</html>

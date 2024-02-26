@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="pizzaStatus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="pizzaMenu.css">
+    <title>Document</title>
+</head>
+<body>
+    <section style="background-color: #CAA6A6;">
+        <div class="container py-5">
+          <div class="row justify-content-center mb-3">
+            <div class="col-md-12 col-xl-10">
+              <div class="card shadow-0 border rounded-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                      <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                        <img src="https://images.creativemarket.com/0.1.0/ps/6082888/1820/1214/m1/fpnw/wm1/un3hccflscqwz5yctttbdmaplnkc7tls4ydqqf9ick5dwcakigujzrwm2j8saw49-.jpg?1552905460&s=185526a2d3a8f86b8d10831b3eecb7a9"
+                          class="w-100" />
+                        <a href="#!">
+                          <div class="hover-overlay">
+                            <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                      <h5>Pepperoni Pizza</h5>
+                      <div class="d-flex flex-row">
+                        <div class="text-danger mb-1 me-2">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span>310</span>
+                      </div>
+                      <div class="mt-1 mb-0 text-muted small">
+                        <span>Classic Delight</span>
+                        <span class="text-primary"> • </span>
+                        <span>Savory Sensation</span>
+                        <span class="text-primary"> • </span>
+                        <span>Pepperoni Perfection<br /></span>
+                      </div>
+                      <div class="mb-2 text-muted small">
+                        <span>Flavorful Feast</span>
+                        <span class="text-primary"> • </span>
+                        <span>Tasty Tradition</span>
+                      </div>
+                      <p class="text-truncate mb-4 mb-md-0">
+                        Create your own Pizza Story.
+                      </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                      <div class="d-flex flex-row align-items-center mb-1">
+                        <h4 class="mb-1 me-1">₹400.00</h4>
+                        <span class="text-danger"><s>₹565.00</s></span>
+                      </div>
+                      <div class="d-flex flex-column mt-4">
+                        <div class="input-group mt-2">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary" type="button" onclick="decrementQuantity('quantityInput1')">-</button>
+                            </div>
+                            <input type="number" class="form-control custom-input" id="quantityInput1" value="0" min="0" max="3" disabled>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" onclick="incrementQuantity('quantityInput1')">+</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-3">
+            <div class="col-md-12 col-xl-10">
+              <div class="card shadow-0 border rounded-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                      <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                        <img src="https://pizzapedia.org/wp-content/uploads/2023/03/stock-photo-fresh-homemade-italian-pizza-margherita-with-buffalo-mozzarella-and-basil-1829205563-850x550.jpg"
+                          class="w-100" />
+                        <a href="#!">
+                          <div class="hover-overlay">
+                            <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                      <h5>Margherita Supreme</h5>
+                      <div class="d-flex flex-row">
+                        <div class="text-danger mb-1 me-2">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span>219</span>
+                      </div>
+                      <div class="mt-1 mb-0 text-muted small">
+                        <span>Tomato Elegance</span>
+                        <span class="text-primary"> • </span>
+                        <span>Mozzarella Bliss</span>
+                        <span class="text-primary"> • </span>
+                        <span>Basil Perfection<br /></span>
+                      </div>
+                      <div class="mb-2 text-muted small">
+                        <span>Supreme Simplicity</span>
+                        <span class="text-primary"> • </span>
+                        <span>Classic Harmony</span>
+                      </div>
+                      <p class="text-truncate mb-4 mb-md-0">
+                        Create your own Pizza Story.
+                      </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                      <div class="d-flex flex-row align-items-center mb-1">
+                        <h4 class="mb-1 me-1">₹265.00</h4>
+                        <span class="text-danger"><s>₹370.00</s></span>
+                      </div>
+                      <div class="d-flex flex-column mt-4">
+                        <div class="d-flex flex-column mt-4">
+                            <div class="input-group mt-2">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-secondary" type="button" onclick="decrementQuantity('quantityInput2')">-</button>
+                                </div>
+                                <input type="number" class="form-control custom-input" id="quantityInput2" value="0" min="0" max="3" disabled>
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button" onclick="incrementQuantity('quantityInput2')">+</button>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-3">
+            <div class="col-md-12 col-xl-10">
+              <div class="card shadow-0 border rounded-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                      <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                        <img src="http://dudethatcookz.com/wp-content/uploads/2018/01/DSC_1222-01.jpeg"
+                          class="w-100" />
+                        <a href="#!">
+                          <div class="hover-overlay">
+                            <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                      <h5>Meat Lover's Feast</h5>
+                      <div class="d-flex flex-row">
+                        <div class="text-danger mb-1 me-2">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span>592</span>
+                      </div>
+                      <div class="mt-1 mb-0 text-muted small">
+                        <span>Carnivore's Delight</span>
+                        <span class="text-primary"> • </span>
+                        <span>Protein Extravaganza</span>
+                        <span class="text-primary"> • </span>
+                        <span>Hearty Indulgence<br /></span>
+                      </div>
+                      <div class="mb-2 text-muted small">
+                        <span>Flavorful Meatfest</span>
+                        <span class="text-primary"> • </span>
+                        <span>Savory Satisfaction</span>
+                      </div>
+                      <p class="text-truncate mb-4 mb-md-0">
+                        Create your own Pizza Story.
+                      </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                      <div class="d-flex flex-row align-items-center mb-1">
+                        <h4 class="mb-1 me-1">₹460.00</h4>
+                        <span class="text-danger"><s>₹580.00</s></span>
+                      </div>
+                      <div class="d-flex flex-column mt-4">
+                        <div class="d-flex flex-column mt-4">
+                            <div class="input-group mt-2">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-secondary" type="button" onclick="decrementQuantity('quantityInput3')">-</button>
+                                </div>
+                                <input type="number" class="form-control custom-input" id="quantityInput3" value="0" min="0" max="3" disabled>
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button" onclick="incrementQuantity('quantityInput3')">+</button>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-3">
+            <div class="col-md-12 col-xl-10">
+              <div class="card shadow-0 border rounded-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                      <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                        <img src="https://us.123rf.com/450wm/stockgiu/stockgiu2304/stockgiu230402444/202972397-freshly-baked-pizza-on-rustic-wooden-table-generated-by-artificial-intelligence.jpg?ver=6"
+                          class="w-100" />
+                        <a href="#!">
+                          <div class="hover-overlay">
+                            <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                      <h5>BBQ Chicken Delight</h5>
+                      <div class="d-flex flex-row">
+                        <div class="text-danger mb-1 me-2">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                        <span>482</span>
+                      </div>
+                      <div class="mt-1 mb-0 text-muted small">
+                        <span>Tangy Perfection</span>
+                        <span class="text-primary"> • </span>
+                        <span>Smoky Bliss</span>
+                        <span class="text-primary"> • </span>
+                        <span>Chicken Charisma<br /></span>
+                      </div>
+                      <div class="mb-2 text-muted small">
+                        <span>BBQ Elegance</span>
+                        <span class="text-primary"> • </span>
+                        <span>Flavorful Harmony</span>
+                      </div>
+                      <p class="text-truncate mb-4 mb-md-0">
+                        Create your own Pizza Story.
+                      </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                      <div class="d-flex flex-row align-items-center mb-1">
+                        <h4 class="mb-1 me-1">₹540.00</h4>
+                        <span class="text-danger"><s>₹720.00</s></span>
+                      </div>
+                      <div class="d-flex flex-column mt-4">
+                        <div class="input-group mt-2">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary" type="button" onclick="decrementQuantity('quantityInput4')">-</button>
+                            </div>
+                            <input type="number" class="form-control custom-input" id="quantityInput4" value="0" min="0" max="3" disabled>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" onclick="incrementQuantity('quantityInput4')">+</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="text-center" style="background-color: #CAA6A6">
+        <button type="button" class="btn btn-view-cart mx-auto d-block" data-toggle="modal" data-target="#cartModal" onclick="addToCart()" style="background-color: #944E63; color: #fff;">View Cart</button>
+      </div>      
+
+
+      <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Your Cheezelicious Cart
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-image">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Pizza</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody id="table-container">
+                   <!-- Populating cards here -->
+                  <div class="d-flex justify-content-end">
+                    <h5>Total: <span class="price text-success"></span></h5>
+                  </div>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer border-top-0 d-flex justify-content-between">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button id="order-btn" type="button" class="btn" onclick="handleCheckOut()" style="background-color: #944E63; color:#fff">Place Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="pizzaMenu.js"></script>
+      <!-- MDB -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+      <script src="pizzaStatus.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <script src="../globalParameters.js"></script>
+</body>
+</html>
